@@ -18,9 +18,6 @@ jobs:
       DATABRICKS_HOST: ${{ secrets.DATABRICKS_HOST }}
       DATABRICKS_TOKEN:  ${{ secrets.DATABRICKS_TOKEN }}
 
-    run: |
-      echo "$DATABRICKS_TOKEN"
-
     steps:
       - uses: actions/checkout@v1
 
@@ -45,6 +42,8 @@ jobs:
 
       - name: Deploy integration test
         run: |
+	  echo "$DATABRICKS_TOKEN"
+          echo "$DATABRICKS_TOKEN"
           dbx deploy --jobs=cicd-sample-project-sample-integration-test --files-only
 
       - name: Run integration test
