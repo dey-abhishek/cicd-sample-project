@@ -1,6 +1,6 @@
 # cicd-sample-project
 
-This is a sample project for Databricks, generated via cookiecutter.Using Github Actions, we are automating the cicd demo. While using this project, you need Python 3.X and `pip` or `conda` for package management.Demo
+This is a sample project for Databricks, generated via cookiecutter.Using Github Actions, we are automating the end to end cicd. While using this project, you need Python 3.X and `pip` or `conda` for package management.Demo
 
 ## Installing project requirements
 
