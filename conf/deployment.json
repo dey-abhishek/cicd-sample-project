@@ -30,26 +30,18 @@
             {
                 "name": "cicd-sample-project-sample-integration-test",
                 "new_cluster": {
-                            "num_workers": 0,
-                            "spark_version": "7.3.x-cpu-ml-scala2.12",
-                            "spark_conf": {
-                                "spark.master": "local[*, 4]",
-                                "spark.databricks.cluster.profile": "singleNode"
-                            },
-                            "aws_attributes": {
-                                "first_on_demand": 1,
-                                "availability": "SPOT_WITH_FALLBACK",
-                                "instance_profile_arn": "arn:aws:iam::997819012307:instance-profile/shard-demo-s3-access",
-                                "spot_bid_price_percent": 100
-                            },
-                            "node_type_id": "i3.xlarge",
-                            "driver_node_type_id": "i3.xlarge",
-                            "custom_tags": {
-                                "ResourceClass": "SingleNode"
-                            },
-                            "enable_elastic_disk": true,
-                            "cluster_source": "JOB"
-                        },
+                      "num_workers": 2,
+                      "spark_version": "7.3.x-cpu-ml-scala2.12",
+                      "aws_attributes": {
+                          "first_on_demand": 1,
+                          "availability": "SPOT_WITH_FALLBACK",
+                          "zone_id": "auto",
+                          "spot_bid_price_percent": 100
+                      },
+                      "node_type_id": "i3.xlarge",
+                      "cluster_source": "JOB",
+                      "policy_id": "E060384AFC00043E"
+                  },
                 "libraries": [],
                 "email_notifications": {
                     "on_start": [],
