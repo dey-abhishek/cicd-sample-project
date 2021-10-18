@@ -38,7 +38,7 @@
                     "cluster_source": "JOB",
                     "aws_attributes": {
                         "first_on_demand": 1,
-                        "availability": "SPOT",
+                        "availability": "SPOT"
                     },
                     "num_workers": 0
                 },
