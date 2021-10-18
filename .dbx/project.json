@@ -1,7 +1,7 @@
 {
   "environments": {
     "default": {
-      "profile": "aws",
+      "profile": "DEFAULT",
       "workspace_dir": "/Users/abhishek.dey@databricks.com/dbx/cicd_sample_project",
       "artifact_location": "dbfs:/Users/abhishek.dey@databricks.com/dbx/projects/cicd_sample_project"
     }
