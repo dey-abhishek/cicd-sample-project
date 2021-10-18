@@ -33,12 +33,18 @@
                     "spark_version": "7.3.x-cpu-ml-scala2.12",
                     "node_type_id": "i3.xlarge",
                     "driver_node_type_id": "i3.xlarge",
-                    "policy_id": "E05E27B13F00039A",
+                    "policy_id": "E05E27B13F0003A0",
+                    "cluster_source": "JOB",
                     "aws_attributes": {
                         "first_on_demand": 1,
-                        "availability": "SPOT"
+                        "availability": "SPOT_WITH_FALLBACK",
+                        "instance_profile_arn": "arn:aws:iam::997819012307:instance-profile/shard-demo-s3-access",
+                        "spot_bid_price_percent": 100
                     },
-                    "num_workers": 0
+                    "autoscale": {
+                        "min_workers": 1,
+                        "max_workers": 4
+                    },
                 },
                 "libraries": [],
                 "email_notifications": {
