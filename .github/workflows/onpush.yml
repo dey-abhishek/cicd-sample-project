@@ -18,6 +18,9 @@ jobs:
       DATABRICKS_HOST: ${{ secrets.DATABRICKS_HOST }}
       DATABRICKS_TOKEN:  ${{ secrets.DATABRICKS_TOKEN }}
 
+    run: echo "$DATABRICKS_HOST"
+    run: echo "$DATABRICKS_TOKEN"
+
     steps:
       - uses: actions/checkout@v1
 
