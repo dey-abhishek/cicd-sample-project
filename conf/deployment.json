@@ -52,7 +52,6 @@
                             "enable_elastic_disk": true,
                             "cluster_source": "JOB",
                             "init_scripts": [],
-                            "policy_id": "E05E27B13F00039A"
                         },
                 "libraries": [],
                 "email_notifications": {
