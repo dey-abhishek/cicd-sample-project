@@ -34,8 +34,6 @@
                     "node_type_id": "i3.xlarge",
                     "driver_node_type_id": "i3.xlarge",
                     "policy_id": "E05E27B13F00039A",
-                    "autotermination_minutes": 60,
-                    "cluster_source": "JOB",
                     "aws_attributes": {
                         "first_on_demand": 1,
                         "availability": "SPOT"
