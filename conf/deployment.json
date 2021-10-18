@@ -49,7 +49,6 @@
                                 "ResourceClass": "SingleNode"
                             },
                             "spark_env_vars": {},
-                            "autotermination_minutes": 60,
                             "enable_elastic_disk": true,
                             "cluster_source": "JOB",
                             "init_scripts": [],
