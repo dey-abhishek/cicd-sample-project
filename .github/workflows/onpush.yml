@@ -42,8 +42,6 @@ jobs:
 
       - name: Deploy integration test
         run: |
-          echo "$DATABRICKS_TOKEN"
-          echo "$DATABRICKS_HOST"
           dbx deploy --jobs=cicd-sample-project-sample-integration-test --files-only
 
       - name: Run integration test
